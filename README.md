@@ -9,7 +9,7 @@ Create new image from all layer of current image, and
 save as .png into project directory.
 Also create .tscn with sprite definition for every layer.
 
-[Example](https://filonov-a.github.io/godot-gimp/examples/Image_from_layers.png)
+![Example](https://filonov-a.github.io/godot-gimp/examples/Image_from_layers.png)
 
 
 Filters -> Godot -> "Create Sprite set from image"
