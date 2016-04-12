@@ -9,7 +9,7 @@
 которое содержит слои исходного изображения по горизонтали или вертикали.
 Изображение сохраняется в папку проекта, туда же генерится tcsn-файл
 который содержит описание все спрайтов. При генерации имен спрайтов используются имена слоев.
-См examples/Image_from_layers.png
+![Example](https://filonov-a.github.io/godot-gimp/examples/Image_from_layers.png)
 
 ##Фильтры -> Godot -> "Create Sprite set from image"
 
