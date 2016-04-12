@@ -4,19 +4,17 @@ Put godot.scm into ~/.gimp-2.X/scripts/ directory and press
 Filters -> Scripts-Fu -> Refresh Scripts (or just restart gimp)
 
 In Menu:
+Filters -> Godot -> "Create Image from Layers"
+Create new image from all layer of current image, and 
+save as .png into project directory.
+Also create .tscn with sprite definition for every layer.
+
+[Example](https://filonov-a.github.io/godot-gimp/examples/Image_from_layers.png)
+
+
 Filters -> Godot -> "Create Sprite set from image"
-
-When you 
-
-# По русски
-
-Фильтры -> Godot -> "Create Sprite set from image"
-
-Для многослойной картинки создается новое изображение
-которое содержит слои исходного изображения по горизонтали или вертикали.
-Изображение сохраняется в указанную папку, туда же генерится tcsn-файл
-который содержит описание все спрайтов. При генерации имен спрайтов используются имена слоев.
-
+Split current image into set of sprites and generate .tscn file with definition of
+all sprites. Export current image as .png into project directory.
 
 
 ## License
