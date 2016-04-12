@@ -37,9 +37,9 @@
     (write-scene-header outport resname)
 
     (do (( y off_y (+ h y )))
-	((> y img_h))
+	((>= y img_h))
       (do (( x off_x (+ w x)))
-	  ((> x img_w))
+	  ((>= x img_w))
 	(write-sprite outport
 		      (string-append prefix (number->string i))
 		      x y w h
@@ -115,7 +115,7 @@
 		    SF-VALUE   "Offset X" "0"
 		    SF-VALUE   "Offset Y" "0"
 		    SF-STRING   "Sprite Name prefix" "s"
-		    SF-DIRNAME "Directory" ""
+		    SF-DIRNAME "Project Directory" ""
 		    SF-STRING   "Base name" "tileset"
 		    )
 (script-fu-register "godot-create-sprites"
@@ -129,7 +129,7 @@
 		    SF-DRAWABLE     "Layer to use"          0
 		    SF-OPTION        "Direction"          '("Horizontal" "Vertical")
 		    SF-STRING   "Sprite Name prefix" "s"
-		    SF-DIRNAME "Directory" ""
+		    SF-DIRNAME  "Project Directory" ""
 		    SF-STRING   "Base name" "tileset"
 		    SF-OPTION   "Show Image"          '("Yes" "No")
 		    )
