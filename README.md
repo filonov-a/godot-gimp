@@ -8,7 +8,8 @@ In Menu:
 Create new image from all layer of current image, and 
 save as .png into project directory.
 Also create .tscn with sprite definition for every layer.
-
+If you can choose "Turn off mipmap generation", .png.flags file also will be created
+with /"gen_mipmaps=false"/ option
 ![Example](https://filonov-a.github.io/godot-gimp/examples/Image_from_layers.png)
 
 
