@@ -17,6 +17,8 @@ with /"gen_mipmaps=false"/ option
 Split current image into set of sprites and generate .tscn file with definition of
 all sprites. Export current image as .png into project directory.
 
+##Filters -> Godot -> "Split layer to separate images"
+Save every layer to separate png-file.
 
 ## License
 
