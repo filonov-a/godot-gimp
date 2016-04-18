@@ -3,7 +3,7 @@
 ;;
 ;; --------------------------------------------------------------------------------------------
 (define (export-png-withflags img drawable pngname mipmap)
-      (if (= 1 mipmap)
+     (if (= 1 mipmap)
 	  (let ( (outport (open-output-file (string-append pngname ".flags" ))))
 	     (display "gen_mipmaps=false\n" outport)
 	     (close-output-port outport))
@@ -85,9 +85,9 @@
     (close-output-port outport)
     (gimp-image-resize-to-layers new_image)
     (gimp-image-merge-visible-layers new_image EXPAND-AS-NECESSARY)
-    (export-png-withflags new_image
-	      (car(gimp-image-active-drawable new_image))
-	      pngname  mipmap)
+;    (export-png-withflags new_image
+;	      (car(gimp-image-active-drawable new_image))
+;	      pngname  mipmap)
     (if (= 0 close_image)
 	(gimp-display-new new_image)
 	(gimp-image-delete new_image))
